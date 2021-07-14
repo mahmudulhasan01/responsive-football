@@ -29,6 +29,8 @@ body{
     padding-right: 36px;
 }
 .nav-bar a{
+    translate: relative;
+    margin-left: 100px;
     color: #ffffff;
 }
 
@@ -42,6 +44,12 @@ header-container style Start
 .header-info{
     width: 100%;
 }
+ header:hover #header-transform-and-transition{
+    transform:skewX(-30deg);
+    transition: transform 2s ease 0.3s;
+}
+
+
 .header-info h1{
     font-size: 48px;
     font-weight: bold;
@@ -51,8 +59,9 @@ header-container style Start
 }
 a{
     text-decoration: none;
-    background-color: #E02C6D;
     padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 15px;
 }
 .header-img{
     width: 556px;
@@ -87,14 +96,14 @@ a{
     padding-left: 66px;
 }
 
-
+/* 
+stylesheet for footer section */
 .footer{
     display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-
 .footer img{
     width: 483.87px;
     height: 110px;
@@ -112,4 +121,29 @@ align-items: center;
     margin-top: -18px;
 }
 
+/* @midea Quarise */
+
+/* midea Quarise for mobile devise */
+@media only screen and (max-width:688px) {
+    .header{
+        width: 200%;
+    }
+    .players{
+        background-color: lightseagreen;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #highlights-special-id{
+        background-color: rgba(128, 0, 0, 0.335);
+    }
+    .footer{
+        width: 688px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
     
