@@ -129,12 +129,15 @@ align-items: center;
         width: 200%;
     }
     .players{
-        background-color: lightseagreen;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     #highlights-special-id{
         background-color: rgba(128, 0, 0, 0.335);
+    }
+    #highlights-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
     .footer{
         width: 688px;
